@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template-areas: "sidebar header header header"
+    "sidebar main main main";
+    height: 95vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header img {
+    width: 50px;
+    height: auto;
+}
+
+.search {
+    align-items: center;
+}
+
+.search img {
+    width: 25px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: blue;
+}
+
+.main {
+    grid-area: main;
+    background-color: green;
+}
+
