@@ -1,21 +1,28 @@
+@font-face {
+    font-family: Handjet;
+    src: url(./Handjet-VariableFont_ELGR\,ELSH\,wght.ttf);
+}
+
 .container {
     display: grid;
-    grid-template: .7fr 4fr / 1fr 4fr;
+    grid-template: 1fr 4fr / 1fr 4fr;
     grid-template-areas: "sidebar header header header"
     "sidebar main main main";
     height: 95vh;
 }
 
 img {
-    margin: 12px;
+    margin: 0px 16px;
 }
 
 .header {
     grid-area: header;
-    background-color: aqua;
+    background-color: beige;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding: 12px;
+    padding-left: 24px;
+    padding-right: 30px;
+    font-family: Handjet;
 }
 
 .header img {
@@ -39,7 +46,6 @@ img {
 
 .searchbar input {
     flex-grow: 1;
-    margin: 8px;
     border-radius: 12px;
     border-style: none;
     border-color: gray;
@@ -47,16 +53,48 @@ img {
     height: 24px;
 }
 
+.user {
+    font-size: x-large;
+    font-weight: 500;
+    margin: 0px 12px;
+}
+
+
+.search img {
+    width: 25px;
+}
+
 .greeting {
     display: grid;
-    grid-auto-flow: column;
+    grid-template: 1fr 1fr / 1fr 2fr;
+    grid-template-areas: "treble hi"
+    "treble name";
     align-items: center;
     justify-content: start;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.greeting img {
+    grid-area: treble;
+}
+
+.hi {
+    grid-area: hi;
+    font-size: large;
+}
+
+.name {
+    grid-area: name;
 }
 
 
 button {
-    margin: 12px;
+    border-style: none;
+    border-radius: 12px;
+    background-color: lightblue;
+    padding: 10px 20px;
+    margin: 0px 12px;
 }
 
 .buttons, .user {
@@ -64,13 +102,6 @@ button {
     grid-auto-flow: column;
     align-items: center;
     justify-content: end;
-    margin: 15px;
-}
-
-
-
-.search img {
-    width: 25px;
 }
 
 .sidebar {
