@@ -1,9 +1,13 @@
 .container {
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: .7fr 4fr / 1fr 4fr;
     grid-template-areas: "sidebar header header header"
     "sidebar main main main";
     height: 95vh;
+}
+
+img {
+    margin: 12px;
 }
 
 .header {
@@ -11,6 +15,7 @@
     background-color: aqua;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 12px;
 }
 
 .header img {
@@ -18,9 +23,51 @@
     height: auto;
 }
 
-.search {
+.search, .nav {
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
 }
+.search {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    flex-grow: 1;
+    margin: 8px;
+    border-radius: 12px;
+    border-style: none;
+    border-color: gray;
+    background-color: lightgrey;
+    height: 24px;
+}
+
+.greeting {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+}
+
+
+button {
+    margin: 12px;
+}
+
+.buttons, .user {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+    margin: 15px;
+}
+
+
 
 .search img {
     width: 25px;
