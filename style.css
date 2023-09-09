@@ -110,8 +110,24 @@ button {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: blue;
+    background-color: lightcoral;
+    display: grid;
+    font-family: Handjet;
 }
+
+.sidebar img {
+    height: 25px;
+}
+
+.home {
+    font-size: xx-large;
+}
+
+.controls {
+    align-items: center;
+}
+
+
 
 .main {
     grid-area: main;
