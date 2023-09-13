@@ -113,14 +113,27 @@ button {
     background-color: lightcoral;
     display: grid;
     font-family: Handjet;
+    grid-template-rows: .8fr 1.5fr 1.5fr 2.5fr;
+}
+
+
+.home, .calendar, .students, .invoices, .revenue, .settings, .business {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
 }
 
 .sidebar img {
-    height: 25px;
+    height: 40px;
 }
 
 .home {
-    font-size: xx-large;
+    font-size: 36px;
+}
+
+.controls, .account {
+    font-size: 32px;
 }
 
 .controls {
