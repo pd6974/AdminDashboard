@@ -136,7 +136,13 @@ button {
     font-size: 32px;
 }
 
+.account {
+    display: grid;
+    align-content: center;
+}
+
 .controls {
+    display: grid;
     align-items: center;
 }
 
@@ -145,5 +151,62 @@ button {
 .main {
     grid-area: main;
     background-color: lightcyan;
+    display: grid;
+    grid-template-areas: "project announce"
+    "project trending";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.projects {
+    grid-area: project;
+    background-color: gold;
+    display: grid;
+    grid-template-rows: 1fr 12fr;
+    align-items: center;
+
+}
+
+.projheader {
+    font-size: 18pt;
+    font-weight: 700;
+    padding-left: 12px;
+}
+
+.cardcont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 15px;
+    padding: 8px;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: grid;
+    height: 200px;
+    background-color: blanchedalmond;
+    padding: 4px;
+    font-size: small;
+    align-content: start;
+    justify-items: center;
+}
+
+.card h1 {
+    font-size: 14pt;
+}
+
+
+
+
+.announcements {
+    grid-area: announce;
+    background-color: blueviolet;
+}
+
+.trending {
+    grid-area: trending;
+    background-color: seagreen;
 }
 
