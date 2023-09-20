@@ -3,7 +3,6 @@
     src: url(./Handjet-VariableFont_ELGR\,ELSH\,wght.ttf);
 }
 
-
 .container {
     display: grid;
     grid-template: 1fr 4fr / 1fr 4fr;
@@ -62,7 +61,6 @@ img {
     margin: 0px 12px;
 }
 
-
 .search img {
     width: 25px;
 }
@@ -76,6 +74,7 @@ img {
     justify-content: start;
     font-size: xx-large;
     font-weight: 500;
+    padding: 4px;
 }
 
 .greeting img {
@@ -91,7 +90,6 @@ img {
 .name {
     grid-area: name;
 }
-
 
 button {
     border-style: none;
@@ -110,12 +108,11 @@ button {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: lightcoral;
+    background-color: lightblue;
     display: grid;
     font-family: Handjet;
     grid-template-rows: .8fr 1.5fr 1.5fr 2.5fr;
 }
-
 
 .home, .calendar, .students, .invoices, .revenue, .settings, .business, .social {
     display: grid;
@@ -146,11 +143,9 @@ button {
     align-items: center;
 }
 
-
-
 .main {
     grid-area: main;
-    background-color: lightslategray;
+    background-color: lightgray;
     display: grid;
     grid-template-areas: "project announce"
     "project trending";
@@ -161,17 +156,17 @@ button {
 
 .projects {
     grid-area: project;
-    background-color: lightslategray;
+    background-color: lightgray;
     display: grid;
     grid-template-rows: 1fr 12fr;
-    align-items: center;
 
 }
 
 .projheader {
     font-size: 18pt;
     font-weight: 700;
-    padding-left: 12px;
+    padding: 12px;
+    padding-left: 36px;
 }
 
 .cardcont {
@@ -186,7 +181,7 @@ button {
 .card {
     display: grid;
     height: 200px;
-    background-color: beige;
+    background-color: ivory;
     padding: 4px;
     font-size: small;
     align-content: start;
@@ -198,25 +193,33 @@ button {
     font-size: 14pt;
 }
 
+.trending {
+    grid-area: trending;
+}
+
 .announcements {
     grid-area: announce;
+}
+
+.announcements, .trending {
     padding: 8px;
     display: grid;
     font-size: 12pt;
-    background-color: lightslategray;
+    background-color: lightgray;
     grid-template-rows: 1fr 6fr;
 }
 
 .announcehead {
     font-size: 18pt;
     font-weight: 700;
+    padding: 12px;
 }
 
 .announcements h1 {
     font-size: 14pt;
 }
 
-.newscont {
+.newscont, .trendingcont {
     background-color: beige;
     border-radius: 8px;
     display: grid;
@@ -226,17 +229,18 @@ button {
 .trendhead {
     font-size: 18pt;
     font-weight: 700;
+    padding: 12px;
 }
 
+/*
 .trending {
     grid-area: trending;
-    background-color: lightslategray;
-    padding: 12px;
-    font-size: 18pt;
+    background-color: lightgray;
     font-weight: 700;
     font-size: 14pt;
     display: grid;
     grid-template-rows: 1fr 6fr;
+    padding: 8px;
 }
 
 .trendingcont {
@@ -244,9 +248,11 @@ button {
     border-radius: 8px;
     display: grid;
     padding: 8px;
-
 }
+
+*/
 
 .trending img {
     height: 40px;
 }
+
