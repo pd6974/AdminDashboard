@@ -117,7 +117,7 @@ button {
 }
 
 
-.home, .calendar, .students, .invoices, .revenue, .settings, .business {
+.home, .calendar, .students, .invoices, .revenue, .settings, .business, .social {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -150,18 +150,18 @@ button {
 
 .main {
     grid-area: main;
-    background-color: lightcyan;
+    background-color: lightslategray;
     display: grid;
     grid-template-areas: "project announce"
     "project trending";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
 }
 
 .projects {
     grid-area: project;
-    background-color: gold;
+    background-color: lightslategray;
     display: grid;
     grid-template-rows: 1fr 12fr;
     align-items: center;
@@ -186,27 +186,67 @@ button {
 .card {
     display: grid;
     height: 200px;
-    background-color: blanchedalmond;
+    background-color: beige;
     padding: 4px;
     font-size: small;
     align-content: start;
     justify-items: center;
+    border-radius: 8px;
 }
 
 .card h1 {
     font-size: 14pt;
 }
 
-
-
-
 .announcements {
     grid-area: announce;
-    background-color: blueviolet;
+    padding: 8px;
+    display: grid;
+    font-size: 12pt;
+    background-color: lightslategray;
+    grid-template-rows: 1fr 6fr;
+}
+
+.announcehead {
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+.announcements h1 {
+    font-size: 14pt;
+}
+
+.newscont {
+    background-color: beige;
+    border-radius: 8px;
+    display: grid;
+    padding: 8px
+}
+
+.trendhead {
+    font-size: 18pt;
+    font-weight: 700;
 }
 
 .trending {
     grid-area: trending;
-    background-color: seagreen;
+    background-color: lightslategray;
+    padding: 12px;
+    font-size: 18pt;
+    font-weight: 700;
+    font-size: 14pt;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
 }
 
+.trendingcont {
+    background-color: beige;
+    border-radius: 8px;
+    display: grid;
+    padding: 8px;
+
+}
+
+.trending img {
+    height: 40px;
+}

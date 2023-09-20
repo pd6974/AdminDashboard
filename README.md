@@ -14,3 +14,12 @@ revenue by Edy Subiyanto from <a href="https://thenounproject.com/browse/icons/t
 Settings by Kalki Zion from <a href="https://thenounproject.com/browse/icons/term/settings/" target="_blank" title="Settings Icons">Noun Project</a> (CC BY 3.0)
 
 Business by gingertea from <a href="https://thenounproject.com/browse/icons/term/business/" target="_blank" title="Business Icons">Noun Project</a> (CC BY 3.0)
+
+Harp by Andre Buand from <a href="https://thenounproject.com/browse/icons/term/harp/" target="_blank" title="Harp Icons">Noun Project</a> (CC BY 3.0)
+
+Flute by Andre Buand from <a href="https://thenounproject.com/browse/icons/term/flute/" target="_blank" title="Flute Icons">Noun Project</a> (CC BY 3.0)
+
+
+wave by Luis Prado from <a href="https://thenounproject.com/browse/icons/term/wave/" target="_blank" title="wave Icons">Noun Project</a> (CC BY 3.0)
+
+wave by Luis Prado from <a href="https://thenounproject.com/browse/icons/term/wave/" target="_blank" title="wave Icons">Noun Project</a> (CC BY 3.0)
