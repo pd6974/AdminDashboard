@@ -171,7 +171,7 @@ button {
 
 .cardcont {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, 256px);
     gap: 15px;
     padding: 8px;
     align-content: space-evenly;
@@ -182,15 +182,16 @@ button {
     display: grid;
     height: 200px;
     background-color: ivory;
-    padding: 4px;
-    font-size: small;
+    padding: 8px;
+    font-size: 1em;
     align-content: start;
     justify-items: center;
     border-radius: 8px;
+    padding-left: 12px;
 }
 
 .card h1 {
-    font-size: 14pt;
+    font-size: 1.5em;
 }
 
 .trending {
